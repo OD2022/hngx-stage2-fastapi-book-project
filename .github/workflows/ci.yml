@@ -15,7 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'  # You can change the version as needed
+          python-version: '3.9'  
 
       - name: Install dependencies
         run: |
@@ -26,7 +26,7 @@ jobs:
       - name: Run pytest
         run: |
           source venv/bin/activate
-          pytest  # Run pytest to execute your tests
+          pytest  # Run pytest to execute tests
 
       - name: Upload test results to GitHub (Optional)
         if: always()
