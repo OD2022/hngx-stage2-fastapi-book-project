@@ -24,12 +24,12 @@ jobs:
           pip install -r requirements.txt
 
       - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v20
+        uses: amondnet/vercel-action@v25.2.0
 
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}    
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}  
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}  
-          vercel-branch: main  
+         
 
           
